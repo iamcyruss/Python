@@ -1,0 +1,6 @@
+numlines = open('mbox.txt)
+count = 0
+for line in numlines:
+	count = count + 1
+	
+print 'Line Count"', count

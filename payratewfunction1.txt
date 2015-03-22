@@ -1,0 +1,22 @@
+
+def computepay(h,r):
+    if h > 40:
+		timehalf = ((r/2)+r)
+		othours = (h-40)
+		total = ((othours*timehalf)+(40*r))
+		return total
+	else:
+		total = (r*h)
+		print total		
+
+ try:   
+    hrs = raw_input("Enter Hours: ")
+    hrs = float(hrs)
+    rte = raw_input("Enter Rate: ")
+    rte = float(rte)
+    p = computepay(hrs,rte)
+    print p
+    
+Except:
+    print "Error, that is not a number."
+    quit()
